@@ -14,21 +14,29 @@
                 <h2>1. Exemplo de uso da tag 'figure'</h2>
                 <p>A tag 'figure' é usada para agrupar uma imagem com sua legenda ou descrição.</p>
                 <figure>
-                    <img src="c:\Users\1004741\Downloads\imagem.ia.jpg" alt="Imagem feita por IA">
+                    <img src="img/imagem.ia.jpg" alt="Imagem feita por IA">
                     <figcaption>Uma bela paisagem feita por inteligencia artificial</figcaption>
                 </figure>
             </article>
         </section>
+
         <section>
+            <article></article>
             <h2>2. Exemplo de uso de tag 'picture</h2>
             <p>A tag 'picture' é usada para fornecer diferentes versões de uma imagem,
                 de acordo com o tamanho da tela ou a resolução </p>
             <p>O navegador escolhe automaticamente a versão mais adequada da imagem.</p>
             <picture>
-                <source srcset="c:\Users\1004741\Downloads\travel-composition-with-camera.jpg" media="(max-width)">
+                <source srcset="img/imagem_lagarto.jpg"  media="(max-width: 1080)"> 
+                <source srcset="img/imagem_arara.jpg" media="(max-width: 1080)"> 
+                <img src="img/travel-composition-with-camera.jpg" alt="Imagem responsiva">
             </picture>
         </section>
+      </article>
     </main>
-    
+
+    <footer>
+        <p>&copy; 2025 Exemplo de Uso HTML5 - Todos os direitos reservados.</p>
+    </footer>  
 </body>
 </html>
