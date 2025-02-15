@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+/* Sub titulo*/
+header h1 {
+    background-color: #000000;
+    box-shadow: 0 0 10px rgb(240, 1, 1);
+    color: #ff0707;
+    padding: 20px;
+    font-size: 50px;
+}
+
+header {
+    background-color: #000000;
+    box-shadow: 0 0 10px rgb(240, 1, 1);
+    color: #ff0707;
+    padding: 20px;
+    font-size: 20px;
+}
+
+
+
+nav {
+    margin-top: 20px;
+}
+ul {
+    padding: 0;
+}
+li {
+    margin: 0 15px;
+    display: inline-block;
+}
+a {
+    color: #070101;
+    font-size: 18px;
+}
+section {
+    padding: 50px;
+    margin-top: 20px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fc0000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 50px; /* Deixa os botões arredondados */
+}
+
+
+section h2 , h3  {
+    text-align: center;
+}
+
+
+p {
+    text-align: left;
+    margin-left: 60px; /* Ajuste o valor conforme necessário */
+}
+
+nav a:hover {
+    background-color: #ff9900;
+}
