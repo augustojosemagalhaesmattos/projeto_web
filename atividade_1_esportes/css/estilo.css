@@ -10,10 +10,15 @@ body {
 /* Sub titulo*/
 header h1 {
     background-color: #000000;
-    box-shadow: 0 0 10px rgb(240, 1, 1);
-    color: #ff0707;
+    box-shadow: 0 0 10px rgb(255, 0, 0);
+    color: #ff0000;
     padding: 20px;
     font-size: 50px;
+}
+
+.font-1 {
+    font-family: "Roboto", sans-serif ;
+    font-weight: 1000;
 }
 
 header {
@@ -29,13 +34,7 @@ header {
 nav {
     margin-top: 0px;
 }
-ul {
-    padding: 0;
-}
-li {
-    margin: 0 15px;
-    display: inline-block;
-}
+
 a {
     color: #ffffff;
     font-size: 18px;
@@ -78,3 +77,9 @@ nav a:hover {
     background-color: #ff9900;
 }
 
+#rodape {
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
