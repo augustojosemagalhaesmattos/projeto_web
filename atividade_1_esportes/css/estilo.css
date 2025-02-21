@@ -29,6 +29,13 @@ header {
     font-size: 20px;
 }
 
+.suplemento {
+    border: 2px solid #fcfafa; /* Borda de 2px de espessura e cor preta */
+    padding: 15px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaço entre os blocos de texto */
+    border-radius: 8px; /* Bordas arredondadas */
+  
+}
 
 
 nav {
