@@ -4,24 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Musculação - Força e Foco</title>
-    <!--Conectando o CSS-->
+    <!--Fontes-->
     <link href="https://fonts.google.com/share?selection.family=DM+Serif+Display:ital@0;1|Roboto:ital,wght@0,100..900;1,100..900" rel="stylesheet">
+    <!--Conectando o CSS-->
     <link rel="stylesheet" href="css/estilo.css" />
 
   </head>
   <body>
     <header>
       
-      <h1 class="font-1">Força e Foco</h1>
+      <img src="img/banner original.png" alt="">
+
       <nav>
         
-          <a href="#musculacao">Musculação</a>
-          <a href="#suplementacao">Suplementação</a>
+        <a href="#musculacao">Musculação</a>
+        <a href="#suplementacao">Suplementação</a>
+      
         
       </nav>
     </header>
 
     <section id="musculacao">
+      <section>
   
       <h2>Transforme seu Corpo com Musculação!</h2>
       <p>
@@ -31,11 +35,7 @@
 
       <!-- Imagem -->
       <img
-        src="img/imagem_academia.jpg"
-        alt="Imagem feita por IA"
-        width="500"
-        height="300"
-      />
+        src="img/imagem_academia.jpg" alt="Imagem feita por IA" width="500" height="300"/>
 
       <p>
         Com os treinos certos, você pode conquistar resultados surpreendentes.
@@ -54,28 +54,30 @@
 
       <h2>2. Principais Beneficios</h2>
 
-      <p>● Ganho de massa muscular.</p>
-      <p>● Queima de gordura.</p>
-      <p>● Aumento da força e resistência.</p>
-      <p>● Melhoria da postura e equilíbrio.</p>
-      <p>● Melhoria da saúde cardiovascular.</p>
-      <br />
+        <ul>
+          <li>Ganho de massa muscular</li>
+          <li>Queima de gordura</li>
+          <li>Aumento de força e resistência</li>
+          <li>Melhoria da postura e equilíbrio</li>
+          <li>Melhoria da saúde cardiovascular</li>
+        </ul> 
       </section>
 
-      <section>
+    <section>
       <h2>4. Tipos de Treino</h2>
       <h3>● Treino de hipertrofia (para ganho de massa muscular)</p>
-
-                <img src="img/fit-individual-doing-sport.jpg" alt="hipertrofia" width="250" height="200">
+        <section class="float-left">
+                <img src="img/fit-individual-doing-sport.jpg" alt="hipertrofia" width="300" height="300">
                 <p>
                     O treino de hipertrofia é focado no aumento da massa muscular. Ele
                     estimula o crescimento dos músculos por meio de exercícios que geram
                     sobrecarga nas fibras musculares, causando pequenas lesões que, durante
-                    a recuperação, levam ao aumento do tamanho do músculo
+                    a recuperação, levam ao aumento do tamanho do músculo. 
       
                 </p>
+        </section>
       <h2>● Treino de resistência</h2>
-                
+        <section class="float-right">
                 <img src="img/treino_resistencia.jpg" alt="hipertrofia" width="250" height="200">
 
                 <p>
@@ -85,9 +87,9 @@
                     hipertrofia, que visa o crescimento muscular, o treino de resistência
                     desenvolve a capacidade de realizar muitas repetições com menos fadiga.
                 </p>
-
+        </section>
       <h2>Treino funcional</h2>
-
+        <section class="flaot-left">
                 <img src="img/treino_funcional.jpg" alt="hipertrofia" width="250" height="200">
 
                 <p>
@@ -97,7 +99,8 @@
                     melhorar a coordenação motora, o equilíbrio, a flexibilidade, a força e
                     a estabilidade.
       </p>
-    </section>
+    
+        </section>
 
     <section id="suplementacao">
       <h2>Duvidas sobre suplementação</h2>
@@ -128,7 +131,9 @@
     
     </section>
 
-    <footer id="rodape">
+    <div class="float-left"></div>
+
+    <footer>
       <p>&copy; 2025 Força e Foco. Todos os direitos reservados.</p>
     </footer>
     
