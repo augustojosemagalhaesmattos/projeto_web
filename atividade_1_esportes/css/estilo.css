@@ -59,14 +59,14 @@ img {
 nav a {
     display: inline-block;
     padding: 10px 30px;
-    margin: 10;
+    margin: 10px;
     background-color: #f00101;
     color: #fff;
     text-decoration: none;
     font-size: 18px;
 }
 
-section h2 , h3  {
+section h2, h3  {
     text-align: center;
     color: white;
 }
@@ -88,7 +88,7 @@ nav a:hover {
 
 .float-right img {
     float: right;
-    margin-left: 40px
+    margin-left: 40px;
 }
 
 .clear {
