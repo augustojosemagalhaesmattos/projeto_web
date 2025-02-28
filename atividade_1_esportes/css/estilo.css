@@ -1,10 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     text-align: center;
-    background-color: #201e1e;
-    color: rgb(0, 0, 0);
+    background-color: #b40606;
 }
 /* Sub titulo*/
 header h1 {
@@ -20,7 +17,7 @@ header {
     box-shadow: 0 0 10px #f00101;
     color: #ff0707;
     padding: 20px;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .suplemento {
@@ -31,13 +28,10 @@ header {
 }
 
 #suplementacao, #musculacao {
-    width: 75%;
+    /* width: 75%; */
     margin: auto;
-    background-color: #000000;
-    
+    background-color: #242427;
 }
-
-
 
 nav {
     margin-top: 10px;
@@ -50,11 +44,12 @@ a {
     font-size: 18px;
 }
 
-
 section {
-    padding: 50px;
+    width: 90%;
+    align-items: center;
+    margin: auto;
     margin-top: 20px;
-    color: rgb(245, 245, 245)
+    color: rgb(245, 245, 245);
 }
 img {
     max-width: 100%;
@@ -62,22 +57,30 @@ img {
     margin-top: 20px;
 }
 nav a {
-    display: inline-block;
-    padding: 10px 30px;
-    margin: 10px;
-    background-color: #f00101;
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
     text-decoration: none;
     padding: 15px;
     color: white;
-    display: block;
+    display: inline-block;
+}
+
+h1 {
+    font-size: 40px;
 }
 
 section h2, h3  {
     text-align: center;
     color: white;
+    font-size: 40px;
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px; 
 }
 
 p {
@@ -87,10 +90,9 @@ p {
 }
 
 nav a:hover {
-    background-color: #020202;
+    background-color: #000000;
     transition: background-color 0.3s;
     }
-
 
 .float-left img {
     float: left;
@@ -102,16 +104,13 @@ nav a:hover {
     margin-left: 40px;
 }
  
+.fonte-inicial {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+}
 .titulo{
     clear: both;
 }
-
-/* footer {
-    background-color: #34495e;
-    color: white;
-    padding: 20px;
-    text-align: center;
-} */
 
 footer {
     background-color: #34495e;
