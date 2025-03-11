@@ -1,3 +1,8 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -14,9 +19,8 @@ header h1 {
 
 header {
     background-color: #000000;
-    box-shadow: 0 0 10px #f00101;
+    box-shado: 0 0 10px #f00101;
     color: #ff0707;
-    padding: 20px;
     font-size: 30px;
 }
 
@@ -24,19 +28,21 @@ header {
     border: 2px solid #fcfafa; /* Borda de 2px de espessura e cor preta */
     padding: 15px; /* Espaçamento interno */
     margin-bottom: 20px; /* Espaço entre os blocos de texto */
+    margin-top: 30px ;
     border-radius: 8px; /* Bordas arredondadas */
 }
 
 #suplementacao, #musculacao {
     /* width: 75%; */
-    margin: auto;
     background-color: #242427;
+    padding: 5px;
 }
 
 nav {
     margin-top: 10px;
-    background-color: #f00101;
+    background-color: #b40606;
     text-align: center;
+    width: 100%;
 }
 
 a {
@@ -49,8 +55,8 @@ section {
     align-items: center;
     margin: auto;
     margin-top: 20px;
-    color: rgb(245, 245, 245);
 }
+
 img {
     max-width: 100%;
     height: auto;
@@ -65,12 +71,20 @@ nav a {
 
 h1 {
     font-size: 40px;
+    margin-bottom: 3%;
 }
 
-section h2, h3  {
+h2 {
+    color: white;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+section h3, h4, h1  {
     text-align: center;
     color: white;
     font-size: 40px;
+    margin-top: 0%;
 }
 
 ul {
@@ -81,12 +95,15 @@ ul {
 
 li {
     margin-bottom: 10px; 
+    color: white;
 }
 
 p {
     text-align: center;
     margin-left: 60px; /* Ajuste o valor conforme necessário */
     color:white;
+    margin-bottom: 5%;
+    margin-top: 1%;
 }
 
 nav a:hover {
@@ -119,6 +136,11 @@ footer {
     text-align: center;
     width: 100%; /* Ocupa toda a largura */
     position: relative; /* Mantém o rodapé no fluxo normal */
-    bottom: 0;
     box-sizing: border-box; 
+    
+}
+
+.paragrafo_rodape {
+    margin-bottom:1%;
+    
 }
