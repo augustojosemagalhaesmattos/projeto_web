@@ -19,7 +19,7 @@ header h1 {
 
 header {
     background-color: #000000;
-    box-shado: 0 0 10px #f00101;
+    /* box-shado: 0 0 10px #f00101; */
     color: #ff0707;
     font-size: 30px;
 }
@@ -121,13 +121,24 @@ nav a:hover {
     margin-left: 40px;
 }
  
-.fonte-inicial {
-    font-family: Arial, sans-serif;
+.fonte-2 {
+    font-family: "Tauri";
     font-size: 30px;
 }
 .titulo{
     clear: both;
 }
+
+.font-1 {
+    font-family: "Bebas Neue", arial;
+    font-size: 60px;
+}
+
+.font-3 {
+    font-family: "Bangers";
+    font-size: 25px;
+}
+
 
 footer {
     background-color: #34495e;
