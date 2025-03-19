@@ -18,3 +18,13 @@ table {
 }
 
 /* Define o estilo das celulas da tabela (tanto cabeçalho quanto corpo*/
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Define o estilo do cabeçalho da tabela */
+th {
+    background-color: #4caf50;
+}
