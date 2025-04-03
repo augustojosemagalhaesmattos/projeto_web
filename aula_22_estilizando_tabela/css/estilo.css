@@ -18,3 +18,24 @@ table {
 }
 
 /* Define o estilo das celulas da tabela (tanto cabeçalho quanto corpo*/
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Define o estilo do cabeça~ho da tabela */
+th {
+    background-color: #4caf50;
+    color: white;
+}
+
+/*Alteera a cor de fundo das lui==inhas pares para melhorar a visualização*/
+tr:nth-child(even) {
+    background-color: f2f2f2;
+}
+
+/* Altera a cor de fundo quando o mouse passa sobre a linha*/
+tr:hover {
+    background-color: #ddd;
+}
