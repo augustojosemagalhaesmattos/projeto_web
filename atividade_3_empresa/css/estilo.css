@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: black;
+}
+.menu ul {
+    display: flex;
+    gap: 40px; /* Ajuste a distância entre os botões */
+    justify-content: center;
+    align-items: center; /* Centraliza verticalmente */
+    height: 80px; /* Ajuste a altura conforme necessário */
+}
+
+.menu a {
+    font-family: 'Arial', sans-serif; /* Altere para a fonte desejada */
+    font-size: 18px; /* Ajuste o tamanho */
+    font-weight: bold; /* Deixa em negrito (opcional) */
+    text-transform: uppercase; /* Transforma em maiúsculas (opcional) */
+    color: azure;
+}
