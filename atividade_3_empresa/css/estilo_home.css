@@ -7,7 +7,6 @@
     width: 100%; /* Faz a imagem ocupar toda a largura da tela */
     height: auto; /* Mantém a proporção */
     object-fit: cover; /* Ajusta a imagem sem distorcer */
-    margin-top: 80px;
 }
 
 
