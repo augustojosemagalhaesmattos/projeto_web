@@ -64,7 +64,7 @@ body {
     transition: all 0.3s ease;
 }
 
-.navegcao a:hover {
+.navegacao a:hover {
     background-color: #9d50bb;
     opacity: 0.8; /* Exemplo de opacidade no hover */
 }
@@ -106,4 +106,123 @@ body {
 .borda-arredondada {
     border: 2px solid #6e48aa;
     border-radius: 15px; /* Bordas arredondadas */
+}
+
+.borda-sombra {
+    border: 1px solid #ddd;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Sombra na borda */
+}
+
+.borda-imagem {
+    border: 15px solid transparent;
+    border-image: linear-gradient(45deg, #6e48aa, #9d50bb) 1; /* Borda com graadiente*/
+}
+
+/* Estilos especificos para exemplos de opacidade */
+.exemplo-opacidade-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.exemplo-opacidade {
+    width: 15%;
+    padding: 1rem 0.5rem;
+    background-color: #9d50bb;
+    color: white;
+    font-weight: bold;
+}
+
+.opacidade-1 {opacity: 1;}
+.opacidade-08 {opacity: 0.8;}
+.opacidade-06 {opacity: 0.6;}
+.opacidade-04 {opacity: 0.4;}
+.opacidade-02 {opacity: 0.2;}
+.opacidade-0 {opacity: 0;}
+
+.exemplo-opacidade-rgba {
+    margin: 2rem 0;
+}
+
+.rgba-exemplo {
+    padding: 2rem;
+    background-color: rgba(109, 72, 170, 0.5); /* RGBA com opacidade */
+    color: #333;
+    border-radius: 8px;
+}
+
+/* Estilos especificos para exemplos de gradiente */
+.exemplo-gradiente {
+    padding: 3rem 1rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    color: #333;
+    border-radius: 8px;
+}
+
+.gradiente-linear {
+    background: linear-gradient(to right, #6e48aa, #9d50bb); /* Gradiente linear */
+}
+
+.gradiente-radial {
+    background: radial-gradient(circle, #6e48aa, #9d50bb, #4776E6); /* Gradiente radial */
+}
+
+.gradiente-angulo {
+    background:  linear-gradient(45deg, #6e48aa, #4776e6); /* Gradiente com angulo */
+}
+
+.gradiente-multiplo {
+    background: linear-gradient(to right,
+        #6e48aa,
+        #8a4db3,
+        #9d50bb,
+        #b053c2,
+        #c256c9); /* Gradiente com multiplas cores */
+}
+
+/* Estilos do rodape */
+.rodape {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.rodape p {
+    margin-top: 0.5rem;
+    opacity: 0.8;
+}
+
+/* Estilos para codigo (elementos code) */
+code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f0f0f0;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    border: 1px solid #ddd;
+}
+
+/* Responsividade - ajustes para telas menores */
+@media (max-width: 768px) {
+    .navegacao ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navegacao li {
+        margin: 0.5rem 0;
+    }
+
+    .exemplo-opacidade-container {
+        flex-wrap: wrap;
+    }
+
+    .exemplo-opacidade {
+        width: 30%;
+        margin-bottom: 1rem;
+    }
 }
