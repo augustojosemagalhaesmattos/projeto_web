@@ -1,0 +1,50 @@
+/* Modulo 1: Configurações Básicas e Reset */
+
+/* Reset basico para remover margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuração do corpo do documento */
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh; /* Garante que o body ocupe pelo menos toda a altura da tela */
+    display: flex; /* Ativa flexbox no body */
+    flex-direction: column; /* Organiza os filhos em coluna (header, min, footer) */
+}
+
+/* Estilo basico para todas as seções (apenas para visualição durante o desenvolvimento) */
+header, nav, main, section, aside, footer {
+    padding: 20px;
+    border: 1px dashed #ccc, /* Borda tracejada para visualização */
+}
+
+/* Modulo 2: Estilização do banner */
+
+.banner {
+    background-color: #4a6fa5;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+
+    /* Flexbox para alinhar conteudo verticalmente (se houver multiplos elementos) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinha verticalmente */
+    align-items: center; /* Alinha horizontalmente */
+
+    min-height: 150px; /* Altura minima */
+}
+
+/* Modulo 3: Estilização da Navegação */
+
+.navegacao {
+    background-color: #333; /* Cor de fundo escura */
+
+    /* Flexbox para alinhar os itens de navegação horizontalmente */
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    flex-wrap: wrap; /* Permite que os itens quebrem para linha seguinte em telas pequenas */
+}
