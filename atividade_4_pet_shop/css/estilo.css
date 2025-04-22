@@ -1,98 +1,163 @@
 * {
-margin: 0;
-padding: 0;
-}
-
-.banner img {
-width: 100%; /* Faz a imagem ocupar toda a largura da tela */
-height: auto; /* Mantém a proporção */
-object-fit: cover; /* Ajusta a imagem sem distorcer */
-}
-
-nav {
-background-color: black;
-position: absolute; /* Faz a navegação flutuar sobre o banner */
-top: 0;
-left: 0;
-width: 100%;
-z-index: 10; /* Garante que fique acima da imagem */
-
-}
-.menu ul {
-display: flex;
-gap: 40px; /* Ajuste a distância entre os botões */
-justify-content: center;
-align-items: center; /* Centraliza verticalmente */
-height: 80px; /* Ajuste a altura conforme necessário */
-list-style: none; /* Remove os pontos */
-}
-
-.menu li {
-margin-right: 20px;
-position: relative;
-overflow: hidden;
-}
-
-.menu a {
-font-family: 'Trebuchet MS', sans-serif; /* Altere para a fonte desejada */
-font-size: 18px; /* Ajuste o tamanho */
-font-weight: bold; /* Deixa em negrito (opcional) */
-text-transform: uppercase; /* Transforma em maiúsculas (opcional) */
-color: azure;
-text-decoration: none;
-
-
-padding: 15px;
-color: rgb(92, 88, 88);
-display: block;
-position: relative;
-z-index: 1
-}
-
-.menu li::before {
-content: "";
-position: absolute;
-top: 0;
-left: -100%;
-width: 100%;
-height: 100%;
-background-color: #49464b;
-transition: left 0.4s ease;
-}
-
-.menu li:hover::before {
-left: 0;
-}
-
-.menu a:hover {
-color: rgb(243, 209, 14);
-z-index: 2;
-}
-nav {
-margin-right: 20px;
-position: relative;
-overflow: hidden;
-}
-
-.introducao {
-font-family: "Raleway";
-opacity: 0.8; /* Deixa a letra mais transparente */
-text-align: center;
-margin-top: 50px;
-margin-right: 50px;
-font-size: 37px;
-}
-
-.ponto_inicial {
-margin-top: 20px;
-text-align: center;
-font-size: 27px;
-opacity: 0.8; /* Deixa a letra mais transparente */
-line-height: 2;
-}
-
-.float-left {
-    float: left;
-    margin-right: 15;
-
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+  }
+  
+  .banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .menu {
+    background-color: black;
+    width: 100%;
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    height: 80px;
+    align-items: center;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    padding: 10px;
+  }
+  
+  .menu a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background: #f5a623;
+    transition: width 0.3s;
+  }
+  
+  .menu a:hover::after {
+    width: 100%;
+  }
+  
+  .introducao,
+  .nossos_servicos {
+    font-size: 38px;
+    margin-top: 60px;
+    margin-left: 60px;
+    font-weight: 700;
+    color: #333;
+    position: relative;
+  }
+  
+  .nossos_servicos::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #f5a623;
+    margin-top: 8px;
+  }
+  
+  .ponto_inicial {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 26px;
+    opacity: 0.8;
+    padding: 0 40px;
+  }
+  
+  .servicos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    margin: 80px auto;
+    max-width: 1000px;
+  }
+  
+  .item {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .item img {
+    width: 220px;
+    height: 220px;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .item h2 {
+    font-size: 20px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    color: #444;
+  }
+  
+  /* SEÇÃO DE DEPOIMENTOS */
+  .depoimentos {
+    margin: 80px auto;
+    text-align: center;
+    padding: 0 40px;
+  }
+  
+  .depoimentos h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .depoimentos-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+  }
+  
+  .depoimento {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 250px;
+  }
+  
+  .depoimento p {
+    font-style: italic;
+    color: #555;
+  }
+  
+  .depoimento h4 {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #f5a623;
+  }
+  
