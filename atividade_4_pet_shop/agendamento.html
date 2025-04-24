@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agendamento - Pet Shop</title>
+  <link rel="stylesheet" href="css/estilo.css" />
+</head>
+<body>
+    <header class="banner">
+        <img src="img/banner_mini.png" alt="Banner Pet Shop" />
+      </header>
+  
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="agendamento.html">Agendamento</a></li>
+        </ul>
+      </nav>
+      
+  <section class="agendamento_titulo">Agende um Serviço</section>
+
+  <form class="form_agendamento">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required />
+
+    <label for="servico">Serviço:</label>
+    <select id="servico" name="servico" required>
+      <option value="">Selecione</option>
+      <option value="banho">Banho</option>
+      <option value="tosa">Tosa</option>
+      <option value="atendimento">Atendimento Veterinário</option>
+    </select>
+
+    <label for="data">Data:</label>
+    <input type="date" id="data" name="data" required />
+
+    <label for="hora">Hora:</label>
+    <input type="time" id="hora" name="hora" required />
+
+    <button type="submit">Agendar</button>
+  </form>
+</body>
+</html>

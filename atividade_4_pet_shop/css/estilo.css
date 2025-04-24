@@ -58,7 +58,9 @@ body {
 .introducao,
 .nossos_servicos {
   font-size: 38px;
+  text-align: center;
   margin-top: 60px;
+  margin-bottom: 30px;
   margin-left: 60px;
   font-weight: 700;
   color: #333;
@@ -259,4 +261,421 @@ body {
   background-color: #d88a14;
 }
 
+/* -----------------------------------------------------------Produtos_------------------------------------------------------ */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #fafafa;
+  color: #333;
+}
+
+.menu {
+  background-color: black;
+  padding: 20px;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 40px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #f5a623;
+}
+
+.nossos_servicos {
+  font-size: 38px;
+  margin-top: 60px;
+  margin-left: 60px;
+  font-weight: 700;
+  color: #333;
+  position: relative;
+}
+
+.nossos_servicos::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #f5a623;
+  margin-top: 8px;
+}
+
+.servicos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin: 60px auto;
+  max-width: 1200px;
+}
+
+.item {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 260px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.item img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.item h2 {
+  margin-top: 15px;
+  color: #f5a623;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.item p {
+  margin-top: 10px;
+  color: #555;
+  font-size: 15px;
+}
+
+.preco {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #000;
+  font-size: 18px;
+}
+
+.rodape {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 60px;
+}
+
+/*=============================================================================================produtos============================================================================*/
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+.nossos_produtos {
+  font-size: 38px;
+  margin: 60px;
+  font-weight: 700;
+  color: #333;
+  position: relative;
+}
+
+.nossos_produtos::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #f5a623;
+  margin-top: 8px;
+}
+
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+.item {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.item img {
+  width: 220px;
+  height: 220px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.item h2 {
+  font-size: 20px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  color: #f5a623;
+}
+
+.item p {
+  font-size: 18px;
+  color: #333;
+  margin-top: 8px;
+}
+
+/*=================================================================================Atendimento=======================================*/
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.agendamento_titulo {
+  font-size: 38px;
+  margin: 60px;
+  font-weight: 700;
+  color: #000;
+  position: relative;
+}
+
+.agendamento_titulo::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #f5a623;
+  margin-top: 8px;
+}
+
+.form_agendamento {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.form_agendamento label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.form_agendamento input,
+.form_agendamento select {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.form_agendamento button {
+  background-color: #000;
+  color: #f5a623;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form_agendamento button:hover {
+  background-color: #222;
+}
+
+/* Adiciona a meta tag viewport para garantir a responsividade */
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  background-color: black;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  padding-top: 80px; /* Espaço extra para garantir que o menu não fique sobre o banner */
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  height: 80px;
+  align-items: center;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  padding: 10px;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: #f5a623;
+  transition: width 0.3s;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+/* Ajuste para a tela do celular (Mobile First) */
+@media screen and (max-width: 768px) {
+  /* Menu em dispositivos móveis - empilhando os itens do menu */
+  .menu ul {
+    flex-direction: column; /* Coloca os itens um abaixo do outro */
+    align-items: center;    /* Centraliza os itens */
+    gap: 20px;              /* Espaço entre os itens */
+    padding-top: 20px;      /* Adiciona um espaçamento para o menu no topo */
+  }
+
+  .menu a {
+    font-size: 18px;        /* Aumenta o tamanho da fonte para melhor visualização */
+    padding: 15px;          /* Ajusta o padding dos links para melhorar a usabilidade */
+  }
+
+  .introducao,
+  .nossos_servicos {
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+
+  .nossos_servicos::after {
+    width: 40px;
+    height: 3px;
+    background-color: #f5a623;
+  }
+
+  /* Ajustar layout de serviços */
+  .servicos {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .item {
+    width: 90%; /* Ajusta a largura para dispositivos móveis */
+    margin: 0 auto;
+  }
+
+  /* Ajustes nos depoimentos */
+  .depoimentos-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .depoimento {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* Ajustes nos produtos */
+  .produtos {
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .produtos .item {
+    width: 90%;
+  }
+
+  /* Ajuste do botão */
+  .botao {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+
+  /* Ajuste de campos do formulário */
+  .form_agendamento {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .form_agendamento input,
+  .form_agendamento select,
+  .form_agendamento button {
+    font-size: 14px;
+  }
+}
+
+/* Para dispositivos de telas grandes (desktops e tablets) */
+@media screen and (min-width: 769px) {
+  .servicos {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px auto;
+    max-width: 1000px;
+  }
+
+  .produtos {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px auto;
+    max-width: 1200px;
+  }
+
+  .produtos .item {
+    width: 22%;
+  }
+
+  .item img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .item h2 {
+    font-size: 20px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    color: #f5a623;
+  }
+}
