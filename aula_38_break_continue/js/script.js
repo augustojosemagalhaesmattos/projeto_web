@@ -23,6 +23,31 @@ document.addEventListener('DOMContentLoaded', function () {
         limpar();
 
         // Loop de 1 a 50 
-        for (let)
+        for (let i = 1; i <=50; i++) {
+
+            // Se o numero for divisivel por 13...
+            if (i % 13 === 0) {
+                // Adiciona mensagem
+                add('Parou no ' + i + ' (divisivel por 13!)');
+                // Encerra o loop imediatamente
+                break;
+            }
+            // Caso não seja divisivel por 13 , apenas adiciona o numero na listagem
+            add(i);
+        }
+    });
+
+    // Evento ao clicar no botão com id "btnContinue"
+    document.getElementById('btnContinue').addEventListener('click', function () {
+        limpar();
+
+        // Loop de 1 a 5
+        for (let i = 1; i <= 5; i++) {
+
+            // Se o numero for 3, pula a iteração atual (não adiciona o 3)
+            if (i === 3) continue;
+            // Adiciona o numero normalmente se não for 3
+            add(i);
+        }
     })
-})
+});

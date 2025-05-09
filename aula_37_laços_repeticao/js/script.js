@@ -58,8 +58,5 @@ document.addEventListener('DOMContentLoaded', function () {
                     // Adiciona item para cada número
                     addItem('for:' +i);
                 }
-            
-        
-    
-
-})
+            });
+});
