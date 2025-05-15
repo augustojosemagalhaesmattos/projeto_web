@@ -1,0 +1,16 @@
+#quadrado {
+    width: 150px;
+    height: 150px;
+    background-color: gray; /* cor padrão */
+    margin-top: 20px;
+    border: 2px solid black;
+}
+#btnVermelho {
+    background-color: red;
+}
+#btnVerde {
+    background-color: green;
+}
+#btnAzul {
+    background-color: blue;
+}
