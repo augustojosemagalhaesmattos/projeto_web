@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 botao.addEventListener('click', function () {
 
    let conversao = parseInt(entrada.value);
-
+   
     if (conversao === num2) {
         saida.textContent = "PARABENS, VOCE ACERTOOU!!!";
     } else if (conversao > num2) {

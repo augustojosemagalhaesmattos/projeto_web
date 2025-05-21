@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const entrada = document.getElementById('valor');
     const saida = document.getElementById('resultado');
 
-    botao.addEventListener('click', function () {
-        const numero = entrada.value;
+botao.addEventListener('click', function () {
+        const numero = parseInt(entrada.value);
         
         if (numero < 0) {
             saida.textContent = 'O número é negativo';
@@ -13,6 +13,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         else if (numero > 0) {
             saida.textContent = 'O número é positivo';
+        }
+
+        else if (numero === 0) {
+            saida.textContent = '0 é um número neutro'
         }
     })
 })
