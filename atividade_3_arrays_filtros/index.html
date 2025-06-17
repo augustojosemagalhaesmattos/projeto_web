@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,32 +7,22 @@
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+
     <header>
         <h1>Loja de Produtos Naturais</h1>
     </header>
-    
+
     <main>
-        <section id="Todos">
-            <section class="produtos">
-                <h2>Sabonete Natural</h2>
-                    <p>R$15,00</p>
-            </section>
+        <label for="filtro">Filtrar por categoria:</label>
+        <select id="opcoes">
+            <option value="td" id="td">Todos</option>
+            <option value="al" id="al">Alimentos</option>
+            <option value="cos" id="cos">Cosméticos</option>
+        </select>
 
-            <section class="produtos">
-                <h2>Shampoo Orgânico</h2>
-                    <p>R$25,00</p>
-            </section>
-
-            <section class="produtos">
-                <h2>Granola Artesanal</h2>
-                    <p>R$18,50</p>
-            </section>
-
-            <section class="produtos">
-                <h2>Mel Puro</h2>
-                    <p>R$22,00</p>
-            </section>
-        </section>
+        <ul id="saida"></ul>
+        <div class="resultado" id="resultado"></div>
     </main>
+    <script src="js/script.js"></script>
 </body>
 </html>
